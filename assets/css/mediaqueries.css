@@ -1027,6 +1027,46 @@
     padding: 100px 0 75px;
   }
 }
+@media (max-width: 1470px) {
+  .get_in_touch_section::after {
+    display: none;
+  }
+  .get_in_touch_section:before {
+    background: var(--e-global-color-soft-orange);
+    content: '';
+    height: 950px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    width: 100%; /* Default width for larger screens */
+  }
+
+  /* Make the form column take full width */
+  .get_in_touch_section .col-lg-6,
+  .get_in_touch_section .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  /* Center the content if needed */
+  .get_in_touch_content {
+    margin: 0 auto;
+    max-width: 800px; /* Optional: prevents the form from becoming too wide */
+  }
+
+  /* Hide the decorative shape as well if needed */
+  .get_in_touch_shape.left_shape {
+    display: none;
+  }
+}
+/* Hide only the image when below 1230px */
+@media (max-width: 1230px) {
+  .subscribe_image img {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 991px) {
   .main_header {
@@ -3247,6 +3287,7 @@
     margin-top: -395px;
   }
 }
+
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .main_header {

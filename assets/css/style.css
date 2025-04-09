@@ -426,14 +426,6 @@ p {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
-@-webkit-keyframes mover {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-30px);
-  }
-}
 
 /* Home Page Our Services Section Style */
 
@@ -2450,3 +2442,4 @@ textarea {
 .get_in_touch_content .form_style {
   margin-left: 0;
 }
+/* for get in touch meead */
