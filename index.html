@@ -107,14 +107,18 @@
 
   <body>
     <div class="banner-section-outer">
-      <header>
+      <header class="sticky-header">
         <div class="main_header">
           <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
-              <a class="navbar-brand" href="./index.html"
-                ><figure class="mb-0">
-                  <img src="./assets/images/yogastic_logo.png" alt="" /></figure
-              ></a>
+              <a class="navbar-brand" href="./index.html">
+                <figure class="mb-0">
+                  <img
+                    src="./assets/images/yogastic_logo.png"
+                    alt="Yogastic Logo"
+                  />
+                </figure>
+              </a>
               <button
                 class="navbar-toggler collapsed"
                 type="button"
@@ -134,7 +138,7 @@
                     <a class="nav-link" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./about.html">About </a>
+                    <a class="nav-link" href="./about.html">About</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./services.html">Services</a>
@@ -142,45 +146,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="./pricing.html">Pricing</a>
                   </li>
-
                   <li class="nav-item">
                     <a class="nav-link" href="./team.html">Team</a>
                   </li>
-                  <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"> Blog </a>
-                                <div class="dropdown-menu drop-down-content">
-                                    <ul class="list-unstyled drop-down-pages">
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./single-post.html">Single Post</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./infinite-scroll.html">Infinite Scroll</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./load-more.html">Load More</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./one-column.html">One Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./two-column.html">Two Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./three-column.html">Three Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./three-colum-sidbar.html">Three Column Sidebar</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./four-column.html">Four Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./six-column.html">Six Column</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li> -->
                   <li class="nav-item">
                     <a class="nav-link contact_us" href="./contact.html"
                       >Contact Us</a
@@ -224,8 +192,9 @@
               <div class="banner-section-content">
                 <h5>Unlock the Ancient Power of Yoga with Arulyog</h5>
                 <h1 data-aos="fade-up">
-                  Breathe Flow Transform... <span class="ityped"></span>
+                  Breathe Flow Transform.<br /><span class="ityped"></span>
                 </h1>
+
                 <p data-aos="fade-right">
                   Rediscover your inner strength, balance, and serenity through
                   the timeless art of yoga.
@@ -1109,5 +1078,23 @@
     <script src="assets/js/animation.js"></script>
     <script src="https://unpkg.com/ityped@0.0.10"></script>
     <script src="assets/js/type.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // JavaScript to handle scroll behavior for the sticky header
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('.sticky-header');
+
+        if (window.scrollY > 50) {
+          // When scrolled down, make header more compact and darker
+          header.style.padding = '5px 0';
+          header.style.backgroundColor = 'rgba(84, 52, 88, 0.98)'; // Slightly more opaque
+        } else {
+          // When at the top, use original styling
+          header.style.padding = '10px 0';
+          header.style.backgroundColor = 'rgba(86, 52, 88, 0.9)'; // More transparent
+        }
+      });
+    </script>
   </body>
 </html>
