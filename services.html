@@ -372,53 +372,68 @@
     <section class="get_in_touch_section">
       <div class="container">
         <div class="row" data-aos="fade-up">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="get_in_touch_content">
               <h5>Get in touch</h5>
               <h2>Get a Free Consultation Now</h2>
-              <form>
+              <form method="POST" action="https://api.web3forms.com/submit">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="af0b7193-e1ba-42f6-a435-db4fb28a9f4a"
+                />
+                <input type="hidden" name="website" value="Arulyog.life" />
+
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="form-group mb-0">
+                      <label for="fname">First Name</label>
                       <input
                         type="text"
                         name="fname"
                         id="fname"
                         class="form-control"
                         placeholder="First Name"
+                        required
                       />
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="form-group mb-0">
+                      <label for="lname">Last Name</label>
                       <input
                         type="text"
                         name="lname"
                         id="lname"
                         class="form-control form_style"
                         placeholder="Last Name"
+                        required
                       />
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="form-group mb-0">
+                      <label for="phone">Phone</label>
                       <input
                         type="tel"
-                        name="phonenum"
-                        id="phonenum"
+                        name="phone"
+                        id="phone"
                         class="form-control"
                         placeholder="Phone"
+                        required
                       />
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="form-group mb-0">
+                      <label for="email">Email</label>
                       <input
                         type="email"
-                        name="emailaddrs"
-                        id="emailaddrs"
+                        name="email"
+                        id="email"
                         class="form-control form_style"
                         placeholder="Email"
+                        required
                       />
                     </div>
                   </div>
@@ -426,52 +441,34 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="form-group mb-0">
+                      <label for="message">Message</label>
                       <textarea
                         rows="3"
-                        name="comment"
-                        id="msg"
+                        name="message"
+                        id="message"
                         class="form-control"
                         placeholder="Message"
+                        required
                       ></textarea>
                     </div>
                   </div>
                 </div>
                 <div class="btn_wrapper">
-                  <button type="submit" name="get_started" id="started">
+                  <button type="submit" id="started" class="btn btn-primary">
                     Get Started
                   </button>
                 </div>
               </form>
             </div>
           </div>
-          <div
-            class="col-lg-3 col-md-3 col-sm-2 col-xs-12 d-md-block d-none"
-          ></div>
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <div class="get_in_touch_video position-relative">
-              <a
-                class="popup-vimeo"
-                href="https://previews.customer.envatousercontent.com/6720474d-ddc3-4b86-acf1-8d093cb37b6d/watermarked_preview/watermarked_preview.mp4"
-              >
-                <figure class="video_img mb-0">
-                  <img
-                    class="thumb img-fluid"
-                    style="cursor: pointer"
-                    src="./assets/images/get_in_touch_video_icon.png"
-                    alt=""
-                  />
-                </figure>
-              </a>
-            </div>
-          </div>
+          <figure class="get_in_touch_shape left_shape mb-0">
+            <img
+              src="./assets/images/get_in_touch_shape.png"
+              alt="Decorative Shape"
+              class="img-fluid"
+            />
+          </figure>
         </div>
-        <figure class="get_in_touch_shape left_shape mb-0">
-          <img
-            src="./assets/images/get_in_touch_shape.png"
-            alt=""
-            class="img-fluid"
-          />
-        </figure>
       </div>
     </section>
     <!-- OUR SPECIALTIES SECTION -->
@@ -621,7 +618,7 @@
             </div>
             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
               <figure class="subscribe_image mb-0">
-                <img src="./assets/images/subscribe_image.png" alt="" />
+                <img src="assets\images\subscribe_image-12.png" alt="" />
               </figure>
             </div>
           </div>

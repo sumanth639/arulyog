@@ -784,7 +784,7 @@ p {
   position: absolute;
 }
 .get_in_touch_section::after {
-  background: url(../images/get_in_touch_image.jpg);
+  background: url(../images/get_in_touch_image11.jpg);
   content: '';
   width: 50%;
   height: 806px;
@@ -1030,6 +1030,23 @@ textarea {
   background-color: var(--e-global-color-secondary);
   transform: translateY(-10px);
 }
+.pricing_plans_box_lower_portion,
+.second_lower_portion,
+.third_lower_portion {
+  padding-bottom: 30px;
+  /* border: 1px solid saddlebrown; */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(139, 69, 19, 0.15);
+  transition: all 0.3s ease;
+}
+
+.pricing_plans_box_lower_portion:hover,
+.second_lower_portion:hover,
+.third_lower_portion:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(139, 69, 19, 0.25);
+  /* border-color: #c17a22; */
+}
 
 /* Home Page Testimonial Section Style */
 
@@ -1241,7 +1258,7 @@ textarea {
 }
 .subscribe_content h5 {
   text-transform: uppercase;
-  color: var(--e-global-color-secondary);
+  color: var(--e-global-color-soft-orange);
   letter-spacing: 3.1px;
   margin-bottom: 12px;
 }
@@ -1273,7 +1290,7 @@ textarea {
   text-align: center;
   color: var(--e-global-color-white);
   display: inline-block;
-  background-color: var(--e-global-color-secondary);
+  background-color: var(--e-global-color-soft-orange);
   border-radius: 35px 0px 35px 0px;
   transition: all 0.3s ease-in-out;
   outline: none;
@@ -1283,7 +1300,7 @@ textarea {
 }
 .subscribe_content button:hover {
   color: var(--e-global-color-secondary);
-  background-color: var(--e-global-color-white);
+  background-color: var(--e-global-color-mostly-desaturated-magenta);
   transform: translateY(-10px);
 }
 .subscribe_content button:hover:before {
@@ -2359,7 +2376,7 @@ textarea {
 }
 
 .get_in_touch_section::after {
-  background: url(../images/get_in_touch_image.jpg);
+  background: url(../images/get_in_touch_image11.jpg);
   content: '';
   width: 50%;
   height: 806px;
@@ -2443,3 +2460,160 @@ textarea {
   margin-left: 0;
 }
 /* for get in touch meead */
+/* Get in Touch Section - Base Styles */
+:root {
+  --e-global-color-soft-orange: #fff9ef;
+  --e-global-color-secondary: #c9a063;
+  --e-global-color-primary: #040d21;
+  --e-global-color-white: #ffffff;
+  --e-global-color-text: #7b7b8a;
+}
+
+.get_in_touch_section {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.get_in_touch_section:before {
+  background: var(--e-global-color-soft-orange);
+  content: '';
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.get_in_touch_section::after {
+  background: url(../images/get_in_touch_image11.jpg);
+  background-size: cover;
+  background-position: center;
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.get_in_touch_content {
+  position: relative;
+  z-index: 1;
+  background-color: var(--e-global-color-soft-orange);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.get_in_touch_content h5 {
+  text-transform: uppercase;
+  color: var(--e-global-color-secondary);
+  letter-spacing: 3.1px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.get_in_touch_content h2 {
+  color: var(--e-global-color-primary);
+  margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.get_in_touch_content .form-group {
+  margin-bottom: 20px;
+}
+
+.get_in_touch_content label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--e-global-color-primary);
+}
+
+.get_in_touch_content input,
+.get_in_touch_content textarea {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  background-color: var(--e-global-color-white);
+  color: var(--e-global-color-text);
+  border-radius: 4px;
+  width: 100%;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid rgba(201, 160, 99, 0.2);
+  transition: all 0.3s ease;
+}
+
+.get_in_touch_content textarea {
+  resize: none;
+  height: 115px;
+}
+
+.get_in_touch_content .form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: var(--e-global-color-secondary);
+}
+
+.get_in_touch_content .btn_wrapper {
+  margin-top: 20px;
+}
+
+.get_in_touch_content button {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  padding: 15px 30px;
+  text-align: center;
+  color: var(--e-global-color-white);
+  display: inline-block;
+  background-color: var(--e-global-color-secondary);
+  border-radius: 35px 0px 35px 0px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.get_in_touch_content button:hover {
+  color: var(--e-global-color-secondary);
+  background-color: var(--e-global-color-white);
+  transform: translateY(-5px);
+}
+
+.get_in_touch_content button:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+
+.get_in_touch_content button:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: '';
+  color: var(--e-global-color-secondary);
+  background-color: var(--e-global-color-white);
+  transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
+}
+
+.get_in_touch_section .get_in_touch_shape {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  z-index: 1;
+  max-width: 150px;
+}
