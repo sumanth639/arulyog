@@ -95,7 +95,7 @@ p {
   padding-top: 120px;
 }
 .main_header {
-  padding: 20px 292px; /* Adjusted padding for sticky header */
+  padding: 20px 292px;
 }
 .sticky-header {
   position: fixed;
@@ -784,7 +784,7 @@ p {
   position: absolute;
 }
 .get_in_touch_section::after {
-  background: url(../images/get_in_touch_image11.jpg);
+  background: url(/assets/images/get_in_touch22.jpg);
   content: '';
   width: 50%;
   height: 806px;
@@ -2376,7 +2376,7 @@ textarea {
 }
 
 .get_in_touch_section::after {
-  background: url(../images/get_in_touch_image11.jpg);
+  background: url(/assets/images/get_in_touch22.jpg);
   content: '';
   width: 50%;
   height: 806px;
@@ -2487,7 +2487,7 @@ textarea {
 }
 
 .get_in_touch_section::after {
-  background: url(../images/get_in_touch_image11.jpg);
+  background: url(/assets/images/get_in_touch22.jpg);
   background-size: cover;
   background-position: center;
   content: '';
